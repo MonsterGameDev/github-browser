@@ -28,6 +28,11 @@ export class RepoListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.repos = this._repoService.getRepos();
+    const observable$ = this._repoService.getRepos();
+
+    observable$.subscribe(
+        data => this.repos = data,
+        err => console.log(err.message)
+      );
   }
 }
