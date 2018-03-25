@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { RepoListComponent } from './repo-list/repo-list.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    RepoListComponent
   ],
   imports: [
     BrowserModule
