@@ -28,6 +28,19 @@
           </tr>
         </thead>
         <tbody>
+          <tr *ngFor='let repo of repos'>
+            <td>
+              <img [src]='repo.owner.avatar_url'
+                   [title]='repo.name'
+                   [style.width.px]="imageWidth"
+                   [style.margin.px]="imageMargin"
+                 />
+            </td>
+            <td>{{ repo.name }}</td>
+            <td>{{ repo.full_name }}</td>
+            <td>{{ repo.language }}</td>
+            <td>{{ repo.stargazers_count }}</td>
+          </tr>
 
         </tbody>
       </table>
