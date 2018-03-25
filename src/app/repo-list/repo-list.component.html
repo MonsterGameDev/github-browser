@@ -40,7 +40,8 @@
             <td>{{ repo.name }}</td>
             <td>{{ repo.full_name }}</td>
             <td>{{ repo.language }}</td>
-            <td>{{ repo.stargazers_count }}</td>
+            <td><gh-stars [rating]="repo.stargazers_count"
+              (ratingClicked)="onRatingClicked($event)"></gh-stars></td>
           </tr>
 
         </tbody>
