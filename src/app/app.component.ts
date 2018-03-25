@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<div>
+              <h2>{{ pageTitle }}</h2>
+              <div>My first component</div>
+            </div>`
 })
 export class AppComponent {
-  title = 'app';
+  pageTitle = 'Github Browser';
 }
