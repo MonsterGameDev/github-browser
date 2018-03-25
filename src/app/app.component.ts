@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RepoService } from './repo-list/repo.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -7,7 +8,8 @@ import { Component } from '@angular/core';
               <h2>{{ pageTitle }}</h2>
               <div>My first component</div>
               <gh-repo-list></gh-repo-list>
-            </div>`
+            </div>`,
+  providers: [RepoService]
 })
 export class AppComponent {
   pageTitle = 'Github Browser';
