@@ -9,6 +9,9 @@ export class RepoListComponent {
   pageTitle = 'Repo List';
   imageWidth = 50;
   imageMargin = 2;
+  showImage = false;
+  listFilter = 'Aske';
+
   repos: any[] =  [
     {
         'id': 92201678,
@@ -83,7 +86,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/AskeDad',
         'homepage': null,
         'size': 1,
-        'stargazers_count': 0,
+        'stargazers_count': 4,
         'watchers_count': 0,
         'language': 'HTML',
         'has_issues': true,
@@ -174,7 +177,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/deborahk',
         'homepage': null,
         'size': 130,
-        'stargazers_count': 0,
+        'stargazers_count': 3.2,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -265,7 +268,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/Frontend',
         'homepage': null,
         'size': 13,
-        'stargazers_count': 0,
+        'stargazers_count': 4.1,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -356,7 +359,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/github-browser',
         'homepage': null,
         'size': 105,
-        'stargazers_count': 0,
+        'stargazers_count': 3,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -447,7 +450,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/mathservice',
         'homepage': null,
         'size': 101,
-        'stargazers_count': 0,
+        'stargazers_count': 2.1,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -538,7 +541,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/monstergamemadness',
         'homepage': null,
         'size': 4968,
-        'stargazers_count': 0,
+        'stargazers_count': 5,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -629,7 +632,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/ngOutput',
         'homepage': null,
         'size': 12,
-        'stargazers_count': 0,
+        'stargazers_count': 3.2,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -720,7 +723,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/ngrx-simple-todo',
         'homepage': null,
         'size': 151,
-        'stargazers_count': 0,
+        'stargazers_count': 3.2,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -811,7 +814,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/observables1',
         'homepage': null,
         'size': 13356,
-        'stargazers_count': 0,
+        'stargazers_count': 3.2,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -902,7 +905,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/pipes-exercise',
         'homepage': null,
         'size': 10,
-        'stargazers_count': 0,
+        'stargazers_count': 3.2,
         'watchers_count': 0,
         'language': 'TypeScript',
         'has_issues': true,
@@ -993,7 +996,7 @@ export class RepoListComponent {
         'svn_url': 'https://github.com/MonsterGameDev/rxjsKursus',
         'homepage': null,
         'size': 5,
-        'stargazers_count': 0,
+        'stargazers_count': 3.2,
         'watchers_count': 0,
         'language': 'JavaScript',
         'has_issues': true,
@@ -1011,5 +1014,9 @@ export class RepoListComponent {
         'watchers': 0,
         'default_branch': 'master'
     }
-];
+  ];
+
+  toggleImage(): void {
+    this.showImage = !this.showImage;
+  }
 }
